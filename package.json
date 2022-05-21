@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.11",
-    "@strapi/plugin-users-permissions": "4.1.8",
-    "@strapi/provider-email-sendgrid": "^4.1.8",
-    "@strapi/provider-email-sendmail": "^4.1.8",
+    "@strapi/plugin-users-permissions": "4.1.11",
+    "@strapi/provider-email-sendgrid": "^4.1.11",
+    "@strapi/provider-email-sendmail": "^4.1.11",
     "@strapi/provider-upload-cloudinary": "^4.1.11",
     "@strapi/strapi": "^4.1.11",
     "better-sqlite3": "7.4.6",
