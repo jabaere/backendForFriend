@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tokens",
+  "info": {
+    "singularName": "token",
+    "pluralName": "tokens",
+    "displayName": "Token",
+    "name": "token",
+    "description": ""
+  },
+  "options": {
+    "increments": false,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "private": true,
+      "configurable": false
+    },
+    "body": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "private": true,
+      "configurable": false
+    },
+    "context": {
+      "type": "json",
+      "private": true,
+      "configurable": false
+    },
+    "login_date": {
+      "type": "datetime",
+      "configurable": false
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "configurable": false
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "token"
+    }
+  }
+}
