@@ -63,17 +63,15 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "token": {
+    "announcement": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::passwordless.token",
-      "inversedBy": "users_permissions_user"
+      "relation": "oneToMany",
+      "target": "api::announcement.announcement"
     },
     "announcements": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::announcement.announcement",
-      "mappedBy": "users_permissions_user"
+      "target": "api::announcement.announcement"
     }
   }
 }
